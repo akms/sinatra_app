@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Cat</title>
+  </head>
+  <body>
+    <h1><%= @cat %></h1>
+    <form action="confirm_cat" method="POST">
+      <textarea name="name" rows="1"></textarea>
+        <input type="submit" value="send">
+    </form>
+    <h1><%= @size %>kg</h1>
+  </body>
+</html>
