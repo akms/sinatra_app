@@ -19,7 +19,7 @@ class SinatraTest < Sinatra::Base
   get '/cat' do
     @cat = cat.name
     @size = cat.size
-    erb :cat
+    erb :cat, layout => false
   end
 
   post '/confirm_dog' do
