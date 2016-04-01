@@ -1,0 +1,9 @@
+%html
+  %head
+    = bootstrap_assets
+    %title Test
+    %body
+      - container :fulid do
+        -row do
+          -span3 do
+            #{yield}

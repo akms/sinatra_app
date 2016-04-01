@@ -2,13 +2,14 @@ require 'cat'
 require 'dog'
 
 class SinatraTest < Sinatra::Base
+  register Sinatra::Twitter::Bootstrap::Assets
   dog = Dog.new
   cat = Cat.new
 
   get '/' do
     @dog = dog.name
     @cat = cat.name
-    erb :index
+    haml :index
   end
   
   get '/dog' do
