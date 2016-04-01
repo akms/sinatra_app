@@ -1,8 +1,19 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Test</title>
+    <meta charset=utf-8 />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <%= yield %>
+    <div class="container-fluid">
+      header
+    </div>
+    <div class="row-fluid">
+      <%= yield %>
+    </div>
+    <div id="footer">
+      footer
+    </div>
   </body>
 </html>
